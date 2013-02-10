@@ -14,5 +14,8 @@ function()
                 Ext.Msg.alert("", "You clicked no!");
             }
     });
+    
+    var content = Ext.get("content");
+    content.on("contextmenu",function(){Ext.Msg.alert("Just Testing!")});
 }
 );
